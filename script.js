@@ -65,29 +65,69 @@
 
 
 
-let fname="Himanshu";
-let lname="Manchanda";
-let designation="developer";
+// let fname="Himanshu";
+// let lname="Manchanda";
+// let designation="developer";
 
-let student=(fname, lname, designation)=>{
-let fullname= fname + " " +lname;
-return {fullname,designation};
+// let student=(fname, lname, designation)=>{
+// let fullname= fname + " " +lname;
+// return {fullname,designation};
+// }
+
+
+
+// document.write(student(fname,lname,designation));
+
+
+// // Destructring Object 
+
+// let user={
+//     name:"Himanshu",
+//     age:21,
+//     city:"Delhi"
+// };
+// let {name,age,city}=user;
+// console.log(name);
+// console.log(age);
+// console.log(city);
+
+// How to use Class 
+
+class hello{
+message(){
+    console.log("Hi Himanshu")
+}
+naughty(){
+    document.write("Hello Babe <br>")
+}
 }
 
+let a = new hello();
+a.message();
+a.naughty();
 
 
-document.write(student(fname,lname,designation));
+// Constructor will call automatically
+class student{
+    constructor(name,age){
+        this.sname=name;
+        this.age=age;
+        console.log("constructor Function");
+    }
+    hello(){
+        console.log(`hello World ${this.sname}   ${this.age}`);
+        document.write(`Hello ${this.sname} Your age is:${this.age} <br>`);
+    }
+    static staticmethod(){
+        console.log("Static function");
+    }
+}
 
-
-
-let user={
-    name:"Himanshu",
-    age:21,
-    city:"Delhi"
-};
-let {name,age,city}=user;
-console.log(name);
-console.log(age);
-console.log(city);
+let hi = new student("Himanshu Manchanda", 50);
+// hi.mobile="Himanshu Manchanda";
+let fuddu = new student("hihi",20)
+hi.hello();
+fuddu.hello();
+student.staticmethod();
 
 
