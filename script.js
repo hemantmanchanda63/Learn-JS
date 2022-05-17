@@ -131,3 +131,34 @@ fuddu.hello();
 student.staticmethod();
 
 
+
+// Inheritance 
+
+class fruits{
+    constructor(name,age,salary){
+    this.empname= name;
+    this.empage= age;
+    this.empsalary= salary;
+        document.write("<br> Hello Himanshu <br>");
+    }
+
+    alu(){
+        document.write(`<h1>Employee Salary</h1><br>Hi ${this.empname} , Your age is ${this.empage} and salary is ${this.empsalary} `)
+    }
+}
+class vegetables extends fruits{
+    alu(){
+        // super.alu();
+        let wifi=2500;
+        let hello=1000;
+        let totalsalary= this.empsalary + wifi + hello;
+        // console.log(totalsalary);
+        document.write(`<h1>Manager Salary</h1><br>Hi ${this.empname} , Your age is ${this.empage} and salary is ${totalsalary} `)
+    }
+}
+
+// let f= new fruits();
+let v= new vegetables("Himanshu",21 ,30000);
+let acer= new fruits("Kumari",29,50000);
+acer.alu();
+v.alu();
