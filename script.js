@@ -162,3 +162,6 @@ let v= new vegetables("Himanshu",21 ,30000);
 let acer= new fruits("Kumari",29,50000);
 acer.alu();
 v.alu();
+
+
+// Modules in JS 
