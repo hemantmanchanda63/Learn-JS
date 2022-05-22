@@ -164,4 +164,53 @@ acer.alu();
 v.alu();
 
 
-// Modules in JS 
+// Promise in JS 
+
+// 3 stages of promise are :-
+
+// pending - wait for next day
+// fullfilled- Restaurant
+// Reject - See you another Day 
+
+
+console.clear();
+
+function prom(x, y ){
+    return new Promise(function(resolve,reject){
+        document.write("<br><br>Fetching Data Please Wait");
+        // var c=x/y;
+        setTimeout(()=>{
+            // if(x, y){
+            //     resolve(`Your answer is: ${c}`);
+            //     }
+            //     else{
+            //     reject("Failed to calculate");
+            //     }
+            $.get("https://jsonplaceholder.typicode.com/posts",function(data){
+                resolve(data);
+            }).fail(errors=>{
+                reject("Failed to load JSON. ")
+            })
+        },4000);
+        });
+}
+
+// let onfullfilment =(result)=>{
+//     console.log(result);
+//     document.getElementById('result').innerHTML=(result);
+// }
+// let onrejection=(error)=>{
+//     console.log(error);
+// }
+// prom(true).then(onfullfilment).catch(onrejection);
+
+prom().then((result)=>{
+    console.log(result);
+    document.getElementById('result').innerHTML=(result);
+}).catch((error)=>{
+    document.getElementById('result').innerHTML=(error);
+    });
+
+
+
+
