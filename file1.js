@@ -10,11 +10,11 @@ console.log(himanshu.name);
 
 // import{ hello } from'./modules.js';
 
-himanshu.hello("Himanshu Manchanda");
+// himanshu.hello("Himanshu Manchanda");
 
-let a =new himanshu.testing();
+// let a =new himanshu.testing();
 
 import{default as aditya } from "./modules.js";
 
 aditya();
-
+console.clear();

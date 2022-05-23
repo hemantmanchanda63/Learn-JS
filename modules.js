@@ -1,7 +1,7 @@
 export default function(){
     console.log("Hello");
 }
-export{ name , hello , testing}
+// export{ name , hello , testing}
 //  let name="himanshu";
  function hello(name){
     // console.clear();

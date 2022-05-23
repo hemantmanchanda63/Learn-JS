@@ -213,4 +213,4 @@ prom().then((result)=>{
 
 
 
-
+console.clear();
