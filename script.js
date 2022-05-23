@@ -206,7 +206,7 @@ function prom(x, y ){
 
 prom().then((result)=>{
     console.log(result);
-    document.getElementById('result').innerHTML=(result);
+    // document.getElementById('result').innerHTML=(result);
 }).catch((error)=>{
     document.getElementById('result').innerHTML=(error);
     });
